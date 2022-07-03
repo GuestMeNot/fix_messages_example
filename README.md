@@ -1,6 +1,6 @@
 
 This example crate shows the generation of [FIX](https://www.fixtrading.org/)
-FIX message encoding and decoding using [code generation](https://github.com/ferrumfix/ferrumfix)
+message encoding and decoding using [code generation](https://github.com/ferrumfix/ferrumfix)
 provided by the [`fefix`](https://crates.io/crates/fefix) crate.
 
 ### Quickfix
