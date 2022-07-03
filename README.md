@@ -10,6 +10,8 @@ compatible implementation of FIX messages. Each [ECN](https://www.investopedia.c
 interprets the FIX message fields, [Layer 1](https://www.fixtrading.org/standards/fix-session-layer-online/)
 and message passing protocol uniquely.
 
+The [coinbase_quickfix.xml](resources/coinbase/coinbase_quickfix.xml) file comes from [`fefix`]
+
 ### FIX Layer 1
 
 Includes Session Management such as Logon, Logoff, Heartbeats, etc.
@@ -40,5 +42,6 @@ Included is a [SOFH](https://www.fixtrading.org/standards/fix-sofh/) implementat
 A SOFH header is a fixed size and intended to be passed in before sending a message 
 on the socket inform the receiver of the exact number of FIX message bytes to be 
 read and the encoding mechanism of these bytes.
+
 
 
