@@ -5,12 +5,7 @@ edition = "2021"
 build = "build.rs"
 
 [dependencies]
-anyhow = "1.0.58"
-bytes = "1.1.0"
 fefix = { version="0.7.0", features=["full"]}
-futures-util = "0.3"
-tokio = { version = "1", features = ["full"] }
-tokio-util = { version = "0.6", features = ["codec"] }
 
 [build-dependencies]
 fefix = { version="0.7.0", features = ["codegen"]}
