@@ -19,8 +19,6 @@ pub fn coinbase_quickfix_decoder() -> Decoder<Config> {
 }
 
 /// Load the example Coinbase FIX Spec. into the returned [Encoder].
-/// **NOTE**: This is a relatively expensive operation.
-///    Does it make sense to cache this internally?
 pub fn coinbase_quickfix_encoder() -> Encoder<Config> {
     let mut config = Config::default();
     config.set_separator(b'|');
