@@ -12,3 +12,9 @@ fefix = { version="0.7.0", features = ["codegen"]}
 
 [features]
 sofh_big_endian = []
+
+[[bench]]
+name = "sofh_bench"
+
+[[bench]]
+name = "coinbase_bench"

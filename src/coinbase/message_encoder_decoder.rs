@@ -9,6 +9,8 @@ pub use crate::coinbase::coinbase_fix_types;
 const QUICKFIX_SPEC: &str = include_str!("../../resources/coinbase/coinbase_quickfix.xml");
 
 /// Load the Coinbase FIX Spec. into the returned [Decoder].
+/// **NOTE**: This is a relatively expensive operation.
+///    Does it make sense to cache this internally?
 pub fn coinbase_quickfix_decoder() -> Decoder<Config> {
     let fix_dictionary = Dictionary::from_quickfix_spec(QUICKFIX_SPEC).unwrap();
     let mut decoder = Decoder::<Config>::new(fix_dictionary);
@@ -17,7 +19,8 @@ pub fn coinbase_quickfix_decoder() -> Decoder<Config> {
 }
 
 /// Load the example Coinbase FIX Spec. into the returned [Encoder].
-///
+/// **NOTE**: This is a relatively expensive operation.
+///    Does it make sense to cache this internally?
 pub fn coinbase_quickfix_encoder() -> Encoder<Config> {
     let mut config = Config::default();
     config.set_separator(b'|');
