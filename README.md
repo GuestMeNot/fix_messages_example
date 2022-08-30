@@ -3,6 +3,12 @@ This example crate shows the generation of [FIX](https://www.fixtrading.org/)
 message encoding and decoding using [code generation](https://github.com/ferrumfix/ferrumfix)
 provided by the [`fefix`](https://crates.io/crates/fefix) crate.
 
+### Zero-Copy
+
+A performance enhancement for this sample would be to use [Zero-Copy](https://en.wikipedia.org/wiki/Zero-copy)
+deserialization. Perhaps using the [zerocopy](https://crates.io/crates/zerocopy) crate.
+The challenge would be integrating this with the `fefix` crate.
+
 ### Quickfix
 
 This example is intended to show a simple [`quickfix`](https://github.com/quickfix/quickfix)
